@@ -11,6 +11,7 @@
         <option value="$PROJECT_DIR$/backend/labo-service/pom.xml" />
         <option value="$PROJECT_DIR$/config-server/pom.xml" />
         <option value="$PROJECT_DIR$/ConfigServer/pom.xml" />
+        <option value="$PROJECT_DIR$/backend/Contact/pom.xml" />
       </list>
     </option>
   </component>

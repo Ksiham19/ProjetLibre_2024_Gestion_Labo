@@ -12,6 +12,7 @@
         <module name="user-service" />
         <module name="ConfigServer" />
         <module name="gateway" />
+        <module name="Contact" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -22,6 +23,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="ConfigServer" options="-parameters" />
+      <module name="Contact" options="-parameters" />
       <module name="Discovery" options="-parameters" />
       <module name="Gestion-Utilisateurs" options="-parameters" />
       <module name="config-server" options="-parameters" />

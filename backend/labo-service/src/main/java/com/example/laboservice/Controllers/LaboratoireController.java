@@ -1,6 +1,7 @@
 package com.example.laboservice.Controllers;
 
 
+import com.example.laboservice.Contact.ContactDTO;
 import com.example.laboservice.link.FullLaboResponse;
 import com.example.laboservice.Entities.Laboratoire;
 import com.example.laboservice.Services.LaboratoireService;
@@ -40,5 +41,10 @@ public class LaboratoireController {
     public ResponseEntity<FullLaboResponse> findAllLaboratoires(
             @PathVariable("labo-id") Integer laboId) {
         return ResponseEntity.ok(laboratoireService.findLaboratoireswithusers(laboId));
+    }
+
+    @GetMapping("/{id}/contacts")
+    public List<ContactDTO> getContactsForLaboratoire(@PathVariable("id") Long id) {
+        return laboratoireService.getContactsForLaboratoire(id);
     }
 }

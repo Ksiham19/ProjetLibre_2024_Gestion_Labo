@@ -20,3 +20,7 @@ spring:
           uri: http://localhost:8083
           predicates:
             - Path=/api/laboratoires/**
+        - id: contacts
+          uri: http://localhost:8084
+          predicates:
+            - Path=/api/contacts/**
