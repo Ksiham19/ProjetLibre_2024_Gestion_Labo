@@ -2,5 +2,5 @@ spring:
   application:
     name: utilisateurs
   config:
-    import: optional:configserver:http://localhost:8888
+    import: optional:configserver:http://eureka-server:8888
 
